@@ -1,11 +1,11 @@
 import sys
-
+import warnings
+warnings.simplefilter("ignore", UserWarning)
+sys.coinit_flags = 2
 from pywinauto import backend
-
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
-
 
 def main():
     app = QApplication(sys.argv)
